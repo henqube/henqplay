@@ -14,14 +14,17 @@
 <title>index</title>
 <!-- write your code here -->
 <style>
+  body {
+	overflow:hidden;
+  }
   #animation_container {
 	position:absolute;
 	margin:auto;
-	left:0;right:0;
+	left:-100%;right:-100%;
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="index.js?1633184488894"></script>
+<script src="index.js?1633184634172"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -81,7 +84,7 @@ function handleComplete(evt,comp) {
 			stage.tickOnUpdate = true;		
 		}
 	}
-	makeResponsive(false,'height',false,1);	
+	makeResponsive(true,'both',true,2);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -89,9 +92,9 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:800px; height:2500px">
-		<canvas id="canvas" width="800" height="2500" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:2500px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:540px; height:960px">
+		<canvas id="canvas" width="540" height="960" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:540px; height:960px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>
