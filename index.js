@@ -2286,13 +2286,88 @@ p.nominalBounds = new cjs.Rectangle(-113,-183,226.1,366.1);
 
 	this.instance_2 = new lib.Symbol2();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(568.8,430,0.845,0.845);
+	this.instance_2.setTransform(568.8,2064.2,0.845,0.845);
 	new cjs.ButtonHelper(this.instance_2, 0, 1, 2);
 
 	this.instance_3 = new lib.Symbol2();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(360,430,0.845,0.845);
+	this.instance_3.setTransform(360,2064.2,0.845,0.845);
 	new cjs.ButtonHelper(this.instance_3, 0, 1, 2);
+
+	this.instance_4 = new lib.Symbol2();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(151.2,2064.2,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_4, 0, 1, 2);
+
+	this.instance_5 = new lib.Symbol2();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(568.8,1737.4,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_5, 0, 1, 2);
+
+	this.instance_6 = new lib.Symbol2();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(360,1737.4,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_6, 0, 1, 2);
+
+	this.instance_7 = new lib.Symbol2();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(151.2,1737.4,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_7, 0, 1, 2);
+
+	this.instance_8 = new lib.Symbol2();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(568.8,1410.5,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_8, 0, 1, 2);
+
+	this.instance_9 = new lib.Symbol2();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(360,1410.5,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_9, 0, 1, 2);
+
+	this.instance_10 = new lib.Symbol2();
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(151.2,1410.5,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_10, 0, 1, 2);
+
+	this.instance_11 = new lib.Symbol2();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(568.8,756.8,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_11, 0, 1, 2);
+
+	this.instance_12 = new lib.Symbol2();
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(360,756.8,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_12, 0, 1, 2);
+
+	this.instance_13 = new lib.Symbol2();
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(151.2,756.8,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_13, 0, 1, 2);
+
+	this.instance_14 = new lib.Symbol2();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(568.8,1083.7,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_14, 0, 1, 2);
+
+	this.instance_15 = new lib.Symbol2();
+	this.instance_15.parent = this;
+	this.instance_15.setTransform(360,1083.7,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_15, 0, 1, 2);
+
+	this.instance_16 = new lib.Symbol2();
+	this.instance_16.parent = this;
+	this.instance_16.setTransform(151.2,1083.7,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_16, 0, 1, 2);
+
+	this.instance_17 = new lib.Symbol2();
+	this.instance_17.parent = this;
+	this.instance_17.setTransform(568.8,430,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_17, 0, 1, 2);
+
+	this.instance_18 = new lib.Symbol2();
+	this.instance_18.parent = this;
+	this.instance_18.setTransform(360,430,0.845,0.845);
+	new cjs.ButtonHelper(this.instance_18, 0, 1, 2);
 
 	this.btn1 = new lib.Symbol1();
 	this.btn1.name = "btn1";
@@ -2300,45 +2375,15 @@ p.nominalBounds = new cjs.Rectangle(-113,-183,226.1,366.1);
 	this.btn1.setTransform(151.2,430,0.845,0.845);
 	new cjs.ButtonHelper(this.btn1, 0, 1, 2);
 
-	this.instance_4 = new lib.Symbol2();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(568.8,756.8,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 2);
-
-	this.instance_5 = new lib.Symbol2();
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(360,756.8,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_5, 0, 1, 2);
-
-	this.instance_6 = new lib.Symbol2();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(151.2,756.8,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_6, 0, 1, 2);
-
-	this.instance_7 = new lib.Symbol2();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(568.8,1083.7,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_7, 0, 1, 2);
-
-	this.instance_8 = new lib.Symbol2();
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(360,1083.7,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_8, 0, 1, 2);
-
-	this.instance_9 = new lib.Symbol2();
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(151.2,1083.7,0.845,0.845);
-	new cjs.ButtonHelper(this.instance_9, 0, 1, 2);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.btn1},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn1},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(415.6,670.3,608.8,1208.1);
+p.nominalBounds = new cjs.Rectangle(415.6,1280.3,608.8,2188.6);
 // library properties:
 lib.properties = {
 	id: 'A7A02FDD864D8D4B8691D2DEE2862A1A',
 	width: 720,
-	height: 1280,
+	height: 2500,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
