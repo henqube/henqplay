@@ -19,18 +19,15 @@ header {
 }
 
 
-
-main{
-    position: relative;
-}
 #main-card {
     display: inline-block;
     margin-top: 40px;
     position: absolute;
-    display: inline-block;
+    display: inline-block;    
+    width : 468px;
     left : 50%;
-    width : 940px;
     transform: translateX(-50%);
+    background-color: rgb(253, 255, 124);
 }
 
 
@@ -41,13 +38,13 @@ main{
 /* 사용하지 않는 1x1 오브젝트도 흰색으로 처리할 것 */
 
 
-.card-section{
-    vertical-align: top;
+#card-section-1{
+    vertical-align: top;    
     display: inline-block;
     margin: 0;
-    width:930px;
+    width:480px;
     height:520px;
-    /*background-color: rgb(253, 255, 124);*/
+    background-color: rgb(253, 255, 124);
 }
 
 
@@ -75,8 +72,8 @@ main{
 .card_1x1 {
     vertical-align: top;
     display: inline-block;    
-    margin : 5px;
-    width : 300px;
+    margin : 2px;
+    width : 150px;
     height : 250px;
     background-color: #eee;
     vertical-align: top;
@@ -84,8 +81,8 @@ main{
 }
 .card_1x2 {
     display: inline-block; 
-    margin : 5px;
-    width : 300px;
+    margin : 2px;
+    width : 150px;
     height : 510px;
     background-color: #eee;
     vertical-align: top;
@@ -93,8 +90,8 @@ main{
 }
 .card_2x1 {
     display: inline-block; 
-    margin : 5px;
-    width : 610px;
+    margin : 2px;
+    width : 310px;
     height : 250px;
     background-color: #eee;
     vertical-align: top;
