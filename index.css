@@ -24,7 +24,7 @@ header {
     margin-top: 40px;
     position: absolute;
     display: inline-block;    
-    width : 468px;
+    width : 65%;
     left : 50%;
     transform: translateX(-50%);
     background-color: rgb(253, 255, 124);
