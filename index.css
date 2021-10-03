@@ -24,10 +24,11 @@ header {
     margin-top: 40px;
     position: absolute;
     display: inline-block;    
-    width : 65%;
+    width : 75%;
     left : 50%;
     transform: translateX(-50%);
-    background-color: rgb(253, 255, 124);
+    /*
+    background-color: rgb(253, 255, 124);*/
 }
 
 
@@ -111,7 +112,7 @@ header {
 
 #card3 {
     background-color: #ffffff;
-    background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbOeAD4%2FbtrgMtkF6F7%2Fh4Erk0xWEztbdJajIIJzK1%2Fimg.png");
+    background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvWeQa%2FbtrgBlCsTWb%2FNvAZQKMkwqGYE2gNFiGtu0%2Fimg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
