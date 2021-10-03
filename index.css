@@ -130,3 +130,7 @@ header {
     margin-top: 200px;
     color : #999;  
 }
+
+a {
+    text-decoration: none;
+}
