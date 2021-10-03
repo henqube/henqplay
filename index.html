@@ -1,101 +1,61 @@
 <!DOCTYPE html>
-<!--
-	NOTES:
-	1. All tokens are represented by '$' sign in the template.
-	2. You can write your code only wherever mentioned.
-	3. All occurrences of existing tokens will be replaced by their appropriate values.
-	4. Blank lines will be removed automatically.
-	5. Remove unnecessary comments before creating your template.
--->
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
-<!-- write your code here -->
-<style>
-  body {
-	overflow:hidden;
-  }
-  #animation_container {
-	position:absolute;
-	margin:auto;
-	left:-100%;right:-100%;
-  }
-</style>
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="index.js?1633184634172"></script>
-<script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-function init() {
-	canvas = document.getElementById("canvas");
-	anim_container = document.getElementById("animation_container");
-	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("A7A02FDD864D8D4B8691D2DEE2862A1A");
-	var lib=comp.getLibrary();
-	handleComplete({},comp);
-}
-function handleComplete(evt,comp) {
-	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	var lib=comp.getLibrary();
-	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.index();
-	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
-	//Registers the "tick" event listener.
-	fnStartAnimation = function() {
-		stage.addChild(exportRoot);
-		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage);
-	}	    
-	//Code to support hidpi screens and responsive scaling.
-	function makeResponsive(isResp, respDim, isScale, scaleType) {		
-		var lastW, lastH, lastS=1;		
-		window.addEventListener('resize', resizeCanvas);		
-		resizeCanvas();		
-		function resizeCanvas() {			
-			var w = lib.properties.width, h = lib.properties.height;			
-			var iw = window.innerWidth, ih=window.innerHeight;			
-			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-			if(isResp) {                
-				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
-					sRatio = lastS;                
-				}				
-				else if(!isScale) {					
-					if(iw<w || ih<h)						
-						sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==1) {					
-					sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==2) {					
-					sRatio = Math.max(xRatio, yRatio);				
-				}			
-			}			
-			canvas.width = w*pRatio*sRatio;			
-			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
-			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
-			stage.scaleX = pRatio*sRatio;			
-			stage.scaleY = pRatio*sRatio;			
-			lastW = iw; lastH = ih; lastS = sRatio;            
-			stage.tickOnUpdate = false;            
-			stage.update();            
-			stage.tickOnUpdate = true;		
-		}
-	}
-	makeResponsive(true,'both',true,2);	
-	AdobeAn.compositionLoaded(lib.properties.id);
-	fnStartAnimation();
-}
-</script>
-<!-- write your code here -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:540px; height:960px">
-		<canvas id="canvas" width="540" height="960" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:540px; height:960px; position: absolute; left: 0px; top: 0px; display: block;">
+<body>
+	<header> 
+		<div id="header-title"> 
+			<img src="https://blog.kakaocdn.net/dn/WavTu/btrgC6qLXX4/UO7KQArU69etn7eeCyylaK/img.gif">
+		</div> 
+	</header>
+	<main>
+
+		
+		<div id="main-card">		
+			<div class="card-section" id="card-section-1">
+				<div id="card-section-1-left">					
+					<a href = "http://naver.com">
+					<div class="card_1x2" id="card1">				
+					</div>
+					</a>
+				</div><div id="card-section-1-right">					
+					<div class="card_1x1" id="card2">
+					</div><a href = "https://www.instagram.com/hendy_u/"><div class="card_1x1" id="card3">
+					</div></a><div class="card_1x1" id="card4">
+					</div><div class="card_1x1" id="card5">
+					</div> 				
+				</div>
+			</div>
+			<div class="card-section" id="card-section-2">
+				<div class="card_1x1" id="card6">
+				</div><div class="card_1x1" id="card7">
+				</div><div class="card_1x1" id="card8">
+				</div><div class="card_1x1" id="card9">
+				</div><div class="card_2x1" id="card10"></div>
+			</div>
+			<div class="card-section" id="card-section-3">
+				<div class="card_1x1" id="card11">
+				</div><div class="card_1x1" id="card12">
+				</div><div class="card_1x1" id="card13">
+				</div><div class="card_1x1" id="card14">
+				</div><div class="card_1x1" id="card15">
+				</div><div class="card_1x1" id="card16"></div>	
+			</div>
+			
+			<div id="main-footer"> Copyright 2021. HENQ All Rights Reserved.</div>
+			</div>
 		</div>
-	</div>
+
+	</main>
+
+	<!--
+	<footer> <p>Copyright 2021. HENQ All Rights Reserved.</p></footer>
+	-->
+	
 </body>
 </html>

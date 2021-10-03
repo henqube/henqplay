@@ -1,0 +1,134 @@
+html, body{
+    margin : 0;
+}
+header {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+}
+
+#header-title {
+    position : absolute;
+    display: inline-block;
+    font-size: 30px;
+    width : 1130px;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+
+main{
+    position: relative;
+}
+#main-card {
+    display: inline-block;
+    margin-top: 40px;
+    position: absolute;
+    display: inline-block;
+    left : 50%;
+    width : 940px;
+    transform: translateX(-50%);
+}
+
+
+
+/* 각 섹션의 rgb를 바꿔서 영역 체크*/
+/* 평소에는 흰색으로 세팅 */
+/* 편집시 section: Yellow / left:red / right:blue 로 분할체크 */
+/* 사용하지 않는 1x1 오브젝트도 흰색으로 처리할 것 */
+
+
+.card-section{
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    width:930px;
+    height:520px;
+    /*background-color: rgb(253, 255, 124);*/
+}
+
+
+
+/*section color : red */
+#card-section-1-left{
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px;
+    width : 305px;
+    height : 520px;
+    /*background-color: rgb(255, 144, 144);*/
+}
+/*section color : blue */
+#card-section-1-right{
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px;
+    width : 620px;
+    height : 520px;
+    /*background-color: rgb(115, 129, 255);*/
+}
+
+
+.card_1x1 {
+    vertical-align: top;
+    display: inline-block;    
+    margin : 5px;
+    width : 300px;
+    height : 250px;
+    background-color: #eee;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.card_1x2 {
+    display: inline-block; 
+    margin : 5px;
+    width : 300px;
+    height : 510px;
+    background-color: #eee;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.card_2x1 {
+    display: inline-block; 
+    margin : 5px;
+    width : 610px;
+    height : 250px;
+    background-color: #eee;
+    vertical-align: top;
+    border-radius: 20px;
+}
+
+
+
+
+#card1 {
+    background-color: #00c73c;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAxzz///8AxjcAxCZQ0Gjc9N/m9+jR8dbQ9Ntp2YMAxjgAxCwAxTAAxTP7//3p+Osfy01R1HC068Hx/PTL8tVIz2O77cfF7ct/3pXX9d8Awx+L4aA70F+Y5KlJ0mqn6LcszVWh5rB024yH4Jtg2oBa1Xau6bwozVMQgS/cAAACxklEQVR4nO3c7W7aQBBG4Vm7QPGabwqBkBSSpr3/O6yUKi0EbK8NjTKvzvPbWnHixWInks0AAAAAAAAAAAAAAAAAAAAAAAAAQEORJ4kJS8WbrXRLxbdFP8FknjcuFVeTlJXWH5yYfQlphmXTUvnXpIV6zX+rm0ouHE+LhqW8F4Zl0010XxjuGhL9FzbtU/+FYbOtXUqgMNzXPugVCsMuq1lKonAzqllKojA81OxTjcLwWH0XRQr78oXhe+UHVCkMs6q7KFM4sYqfNjKFYV7xPNUprDoqChUuLu9TocKwuvgTXKkwPF3ap1KFF4+KUoVheeF5qlUY7s4TxQrH+7Ojolhh2JzdRLXC85GGXOHZSEOvsPfuJuoVhsNpomDhu6OiYmE/O/5po1h4OtKQLDzZp5qFx0dFzcLjkYZo4dFIQ7Xw3z5VLQzrt08sW/h3pKFb+DbS0C0My1y9MDxH9cLx61FRuTBsSvXC15GGdmHYZ+qF/VK9MByiemGYbdUL+87v4aT5ksPSdeGPRfM1CZd85sKXtOv8Fg63P9ULS0v4KrouHI0e1QstP6gXWt5XL8x26oUWH9QLrdyoF2a7sXihxWf1wtRjruPCwq7dp5+90Mon9UKLa/XCYpp2DvRbaOVQvdDyuXphMbpmn3ootNE1Iw0XhRavGGn4KCyy7kdFH4U2mqkXXjHS8FJoses+dVPYeaThptDivXqhld2Oio4KO440HBV2HGl4KrRt2n8MHRd2Gmm4Kuw00vBVaHGlXthhpOGssMNIw1th+5GGu8Iia7lP3RW2Pir6K2x7VHRYWBStjooOC1vuU4+FFg/qhRZ76oXZL/XCNiMNp4UtRhpeC7N96lHRa6HFO/VCyxNHGh9dWOx6gwSbl7r3ev5ZaZqy0GBQ9TK0/ybxjeWNgTd99zkAAAAAAAAAAAAAAAAAAAAAAAAACb8BlaxF0SY61+4AAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+#card3 {
+    background-color: #ffffff;
+    background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbOeAD4%2FbtrgMtkF6F7%2Fh4Erk0xWEztbdJajIIJzK1%2Fimg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+#main-footer {
+    display: inline-block; 
+    background-color: rgb(255, 255, 255);
+    bottom : 0;
+    width : 100%;
+    height : 50px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 200px;
+    color : #999;  
+}
