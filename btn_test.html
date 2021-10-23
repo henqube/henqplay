@@ -11,10 +11,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
+ <meta name="viewport" content="width=device-width">
 <title>btn_test</title>
 <!-- write your code here -->
+<style>
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="btn_test.js?1634974560354"></script>
+<script src="btn_test.js?1634979830070"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -73,7 +82,7 @@ function handleComplete(evt,comp) {
 			stage.tickOnUpdate = true;		
 		}
 	}
-	makeResponsive(false,'both',false,1);	
+	makeResponsive(true,'both',true,1);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -81,9 +90,9 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(230, 217, 201, 1.00); width:550px; height:400px">
-		<canvas id="canvas" width="550" height="400" style="position: absolute; display: block; background-color:rgba(230, 217, 201, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+	<div id="animation_container" style="background-color:rgba(230, 217, 201, 1.00); width:320px; height:400px">
+		<canvas id="canvas" width="320" height="400" style="position: absolute; display: block; background-color:rgba(230, 217, 201, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:320px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>

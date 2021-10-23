@@ -104,11 +104,27 @@ p.nominalBounds = new cjs.Rectangle(-132.5,-52,265,104);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop();
-		this.btn.addEventListener("touchstart", fl_ClickToGoToAndStopAtFrame.bind(this),false);
+		document.documentElement.addEventListener('touchstart', function (event) {
+		     if (event.touches.length > 1) {
+		          event.preventDefault(); 
+		        } 
+		    }, false);
 		
-		function fl_ClickToGoToAndStopAtFrame()
-		{
+		var lastTouchEnd = 0; 
+		
+		document.documentElement.addEventListener('touchend', function (event) {
+		     var now = (new Date()).getTime();
+		     if (now - lastTouchEnd <= 300) {
+		          event.preventDefault(); 
+		        } lastTouchEnd = now; 
+		    }, false);
+		this.stop();
+		
+		
+		this.btn.addEventListener("click", fl_ClickToGoToAndStopAtFrame.bind(this));
+		
+		function fl_ClickToGoToAndStopAtFrame(e)
+		{	
 			this.rot_box.gotoAndPlay(60);
 			this.btn.gotoAndPlay(2);
 		}
@@ -121,21 +137,21 @@ p.nominalBounds = new cjs.Rectangle(-132.5,-52,265,104);
 	this.rot_box = new lib.Symbol3();
 	this.rot_box.name = "rot_box";
 	this.rot_box.parent = this;
-	this.rot_box.setTransform(277.5,152.5);
+	this.rot_box.setTransform(162.5,122.5);
 
 	this.btn = new lib.Symbol1();
 	this.btn.name = "btn";
 	this.btn.parent = this;
-	this.btn.setTransform(275,333.5);
+	this.btn.setTransform(160,303.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn},{t:this.rot_box}]}).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(417.5,304.6,265,281);
+p.nominalBounds = new cjs.Rectangle(187.5,274.6,265,281);
 // library properties:
 lib.properties = {
 	id: '31275A5C9EA7464FBE7BA689F2FE8402',
-	width: 550,
+	width: 320,
 	height: 400,
 	fps: 60,
 	color: "#E6D9C9",
