@@ -105,7 +105,7 @@ p.nominalBounds = new cjs.Rectangle(-132.5,-52,265,104);
 	// timeline functions:
 	this.frame_0 = function() {
 		this.stop();
-		this.btn.addEventListener("click", fl_ClickToGoToAndStopAtFrame.bind(this));
+		this.btn.addEventListener("touchstart", fl_ClickToGoToAndStopAtFrame.bind(this),false);
 		
 		function fl_ClickToGoToAndStopAtFrame()
 		{
