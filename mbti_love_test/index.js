@@ -3405,7 +3405,6 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(0,28.35);
 	this.instance.alpha = 0;
 	this.instance._off = true;
-	this.instance.cache(-178,-13,356,25);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(29).to({_off:false},0).to({alpha:1},40,cjs.Ease.quadInOut).wait(170).to({alpha:0},20,cjs.Ease.quadInOut).wait(41));
 
