@@ -1144,13 +1144,13 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.mbti = new cjs.Text("MBTI", "bold 22px 'NanumGothicExtraBold'", "#A59C9A");
+	this.mbti = new cjs.Text("MBTI", "bold 22px 'Arial'", "#A59C9A");
 	this.mbti.name = "mbti";
 	this.mbti.textAlign = "center";
 	this.mbti.lineHeight = 27;
 	this.mbti.lineWidth = 72;
 	this.mbti.parent = this;
-	this.mbti.setTransform(0,-10.25);
+	this.mbti.setTransform(0,-9.25);
 
 	this.instance = new lib.img_select_mbti_btn_bg();
 	this.instance.cache(-43,-38,85,76);
