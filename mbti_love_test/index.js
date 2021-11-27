@@ -1150,7 +1150,7 @@ if (reversed == null) { reversed = false; }
 	this.mbti.lineHeight = 27;
 	this.mbti.lineWidth = 72;
 	this.mbti.parent = this;
-	this.mbti.setTransform(0,-9.25);
+	this.mbti.setTransform(0,-8.25);
 
 	this.instance = new lib.img_select_mbti_btn_bg();
 	this.instance.cache(-43,-38,85,76);
