@@ -1390,7 +1390,6 @@ if (reversed == null) { reversed = false; }
 	this.instance.setTransform(0,28.35);
 	this.instance.alpha = 0;
 	this.instance._off = true;
-	this.instance.cache(-178,-13,356,25);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(29).to({_off:false},0).to({alpha:1},40,cjs.Ease.quadInOut).wait(170).to({alpha:0},20,cjs.Ease.quadInOut).wait(41));
 
@@ -2235,20 +2234,33 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.mc_loading_bg}]},1).wait(299));
 
 	// Layer_6
-	this.text = new cjs.Text("ENFJ 남자와 INTP 여자의", "16px 'Arial Narrow'", "#9D9D9D");
+	this.text = new cjs.Text("ENFJ 남자와 INTP 여자의", "16px 'Batang'", "#746B6B");
 	this.text.textAlign = "center";
-	this.text.lineHeight = 20;
+	this.text.lineHeight = 18;
 	this.text.parent = this;
-	this.text.setTransform(182.05,15.3);
+	this.text.setTransform(263.1848,20.4,0.7883,0.7883);
 
-	this.text_1 = new cjs.Text("ENFJ 남자와 INTP 여자의", "16px 'HYGothic-Extra'", "#9D9D9D");
+	this.text_1 = new cjs.Text("ENFJ 남자와 INTP 여자의", "16px 'New Gulim'", "#746B6B");
 	this.text_1.textAlign = "center";
 	this.text_1.lineHeight = 18;
 	this.text_1.lineWidth = 198;
 	this.text_1.parent = this;
-	this.text_1.setTransform(182.05,41.85);
+	this.text_1.setTransform(263.2248,41.35,0.7883,0.7883);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text_1},{t:this.text}]}).wait(300));
+	this.text_2 = new cjs.Text("ENFJ 남자와 INTP 여자의", "16px 'Gulim'", "#746B6B");
+	this.text_2.textAlign = "center";
+	this.text_2.lineHeight = 18;
+	this.text_2.parent = this;
+	this.text_2.setTransform(104.2967,20.4,0.7883,0.7883);
+
+	this.text_3 = new cjs.Text("ENFJ 남자와 INTP 여자의", "bold 16px 'Malgun Gothic'", "#9D9D9D");
+	this.text_3.textAlign = "center";
+	this.text_3.lineHeight = 23;
+	this.text_3.lineWidth = 198;
+	this.text_3.parent = this;
+	this.text_3.setTransform(104.3248,41.35,0.7883,0.7883);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(300));
 
 	// Layer_5
 	this.instance_1 = new lib.mc_result_page_1();
